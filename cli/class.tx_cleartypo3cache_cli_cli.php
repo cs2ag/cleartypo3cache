@@ -37,7 +37,7 @@ class tx_cleartypo3cache_cli_cli extends t3lib_cli {
 	 * constructor
 	 */
 	public function __construct() {
-		parent::t3lib_cli();
+		parent::__construct();
 		$this->cli_options = array_merge($this->cli_options, array());
 		$this->cli_help = array_merge($this->cli_help, array(
 			'name' => 'tx_cleartypo3cache_cli_cli',
